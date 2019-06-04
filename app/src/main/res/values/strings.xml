@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Sogem</string>
+    <string name="user_name">Username : </string>
+    <string name="saldo">Saldo</string>
+    <string name="used_plan">Used Plan : </string>
+    <string name="fruit_vegetables">Fruit / Vegetables : </string>
+    <string name="go_to_monitoring">Go To Monitoring</string>
+</resources>

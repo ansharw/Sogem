@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/home"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_home"
+            android:layout_width="match_parent"
+            android:layout_height="273dp"
+            tools:srcCompat="@tools:sample/backgrounds/scenic[4]"
+            android:contentDescription="TODO" />
+
+        <LinearLayout
+            android:id="@+id/detail"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="50dp">
+
+            <LinearLayout
+                android:id="@+id/saldo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:baselineAligned="false"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@android:color/holo_green_light">
+
+                <TextView
+                    android:id="@+id/tv_saldo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/saldo"/>
+
+                <TextView
+                    android:id="@+id/tv_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Rp. 100.000"
+                    android:textSize="40dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:text="@string/user_name" />
+
+            <TextView
+                android:id="@+id/tv_used_plan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:text="@string/used_plan"/>
+
+            <TextView
+                android:id="@+id/tv_fruit_vegetable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:text="@string/fruit_vegetables"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_to_monitoring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            android:text="@string/go_to_monitoring"
+            android:shadowColor="#00000"
+            android:background="@android:color/holo_green_light"/>
+
+    </LinearLayout>
+
+</LinearLayout>
